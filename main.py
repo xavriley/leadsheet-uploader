@@ -62,10 +62,12 @@ def write_music_xml(filename, bar_indexes, output_path):
     for label, chords in data["sections"].items():
         chord_output = []
         for bar in chords:
+            bar_output = []
             for chord in bar:
-                chord_output.append(
+                bar_output.append(
                     [Harte(chord["value"]), bar_length * (1 / int(chord["duration"]))]
                 )
+            chord_output.append(bar_output)
         section_output[label] = chord_output
 
     form_output = []
@@ -74,7 +76,7 @@ def write_music_xml(filename, bar_indexes, output_path):
 
     piece_output = []
     for bar_index in bar_indexes:
-        piece_output.append(form_output[bar_index])
+        piece_output.extend(form_output[bar_index])
 
     s = music21.stream.Stream()
     p = music21.stream.Part()
@@ -109,8 +111,6 @@ def main(filename, yt_url, artist, song_title, syncpoints_path):
     ]
     Path(syncpoint_output_path).write_text(json.dumps(list(syncpoints)))
 
-    sys.exit(0)
-
     app_id = os.getenv("SOUNDSLICE_APP_ID")
     secret = os.getenv("SOUNDSLICE_SECRET")
 
@@ -119,16 +119,17 @@ def main(filename, yt_url, artist, song_title, syncpoints_path):
     # create Pending folder on soundslice if not exist
     all_folders = client.list_folders()
 
+    folder = None
     for f in all_folders:
         if f["name"] == "PiJAMA-Pending":
             folder = f
             break
 
-    if len(all_folders) == 0:
+    if not folder:
         folder = client.create_folder("PiJAMA-Pending")
 
     new_slice = client.create_slice(
-        name=f"{artist} - {song_title}", has_shareable_url=True, folder_id=folder["id"]
+        name=song_title, artist=artist, has_shareable_url=True, folder_id=folder["id"]
     )
 
     sleep(1)  # soundslice API has conservative rate limits
@@ -148,8 +149,10 @@ def main(filename, yt_url, artist, song_title, syncpoints_path):
     sleep(1)
 
     scorehash = new_slice["scorehash"]
+    # load full slice data
+    new_slice = client.get_slice(scorehash)
 
-    if slice["recording_count"] == 0:
+    if new_slice["recording_count"] == 0:
         # Example of uploading a recording from an MP3 file.
         #
         # recording_response = client.create_recording(
@@ -178,7 +181,7 @@ def main(filename, yt_url, artist, song_title, syncpoints_path):
             # Required.
             recording_id=recording_id,
             # Required. See syncpoint data format link above.
-            syncpoints=open(syncpoints_path, "r").read(),
+            syncpoints=open(syncpoint_output_path, "r").read(),
         )
 
 

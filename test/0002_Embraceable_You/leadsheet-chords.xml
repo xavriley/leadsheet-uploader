@@ -16,12 +16,12 @@
     </scaling>
   </defaults>
   <part-list>
-    <score-part id="P079585417b8920cc1c1ea983c10e1315">
+    <score-part id="Pa78529c419e2559e384b684f9f5ca786">
       <part-name />
     </score-part>
   </part-list>
   <!--=========================== Part 1 ===========================-->
-  <part id="P079585417b8920cc1c1ea983c10e1315">
+  <part id="Pa78529c419e2559e384b684f9f5ca786">
     <!--========================= Measure 1 ==========================-->
     <measure number="1">
       <attributes>
@@ -39,7 +39,7 @@
         <root>
           <root-step>F</root-step>
         </root>
-        <kind>dominant</kind>
+        <kind>major-seventh</kind>
       </harmony>
       <note>
         <rest measure="yes" />
@@ -50,27 +50,50 @@
     <measure number="2">
       <harmony>
         <root>
-          <root-step>B</root-step>
-          <root-alter>-1</root-alter>
+          <root-step>G</root-step>
         </root>
-        <kind>major-seventh</kind>
+        <kind>half-diminished</kind>
       </harmony>
       <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
       </note>
     </measure>
     <!--========================= Measure 3 ==========================-->
     <measure number="3">
       <harmony>
         <root>
-          <root-step>D</root-step>
+          <root-step>G</root-step>
         </root>
-        <kind>minor</kind>
+        <kind>minor-seventh</kind>
       </harmony>
       <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
       </note>
     </measure>
     <!--========================= Measure 4 ==========================-->
@@ -498,6 +521,19 @@
     <measure number="31">
       <harmony>
         <root>
+          <root-step>G</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 32 =========================-->
+    <measure number="32">
+      <harmony>
+        <root>
           <root-step>F</root-step>
         </root>
         <kind>major-seventh</kind>
@@ -507,8 +543,84 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 32 =========================-->
-    <measure number="32">
+    <!--========================= Measure 33 =========================-->
+    <measure number="33">
+      <harmony>
+        <root>
+          <root-step>G</root-step>
+        </root>
+        <kind>half-diminished</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+    </measure>
+    <!--========================= Measure 34 =========================-->
+    <measure number="34">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+        </root>
+        <kind>major-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 35 =========================-->
+    <measure number="35">
+      <harmony>
+        <root>
+          <root-step>G</root-step>
+        </root>
+        <kind>minor-seventh</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+    </measure>
+    <!--========================= Measure 36 =========================-->
+    <measure number="36">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+        </root>
+        <kind>major-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 37 =========================-->
+    <measure number="37">
       <harmony>
         <root>
           <root-step>A</root-step>
@@ -521,8 +633,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 33 =========================-->
-    <measure number="33">
+    <!--========================= Measure 38 =========================-->
+    <measure number="38">
       <harmony>
         <root>
           <root-step>G</root-step>
@@ -535,8 +647,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 34 =========================-->
-    <measure number="34">
+    <!--========================= Measure 39 =========================-->
+    <measure number="39">
       <harmony>
         <root>
           <root-step>C</root-step>
@@ -548,8 +660,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 35 =========================-->
-    <measure number="35">
+    <!--========================= Measure 40 =========================-->
+    <measure number="40">
       <harmony>
         <root>
           <root-step>B</root-step>
@@ -562,8 +674,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 36 =========================-->
-    <measure number="36">
+    <!--========================= Measure 41 =========================-->
+    <measure number="41">
       <harmony>
         <root>
           <root-step>B</root-step>
@@ -576,8 +688,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 37 =========================-->
-    <measure number="37">
+    <!--========================= Measure 42 =========================-->
+    <measure number="42">
       <harmony>
         <root>
           <root-step>F</root-step>
@@ -589,8 +701,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 38 =========================-->
-    <measure number="38">
+    <!--========================= Measure 43 =========================-->
+    <measure number="43">
       <harmony>
         <root>
           <root-step>F</root-step>
@@ -614,8 +726,8 @@
         <type>half</type>
       </note>
     </measure>
-    <!--========================= Measure 39 =========================-->
-    <measure number="39">
+    <!--========================= Measure 44 =========================-->
+    <measure number="44">
       <harmony>
         <root>
           <root-step>D</root-step>
@@ -627,8 +739,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 40 =========================-->
-    <measure number="40">
+    <!--========================= Measure 45 =========================-->
+    <measure number="45">
       <harmony>
         <root>
           <root-step>B</root-step>
@@ -652,8 +764,8 @@
         <type>half</type>
       </note>
     </measure>
-    <!--========================= Measure 41 =========================-->
-    <measure number="41">
+    <!--========================= Measure 46 =========================-->
+    <measure number="46">
       <harmony>
         <root>
           <root-step>A</root-step>
@@ -665,8 +777,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 42 =========================-->
-    <measure number="42">
+    <!--========================= Measure 47 =========================-->
+    <measure number="47">
       <harmony>
         <root>
           <root-step>A</root-step>
@@ -690,8 +802,8 @@
         <type>half</type>
       </note>
     </measure>
-    <!--========================= Measure 43 =========================-->
-    <measure number="43">
+    <!--========================= Measure 48 =========================-->
+    <measure number="48">
       <harmony>
         <root>
           <root-step>C</root-step>
@@ -716,8 +828,8 @@
         <type>half</type>
       </note>
     </measure>
-    <!--========================= Measure 44 =========================-->
-    <measure number="44">
+    <!--========================= Measure 49 =========================-->
+    <measure number="49">
       <harmony>
         <root>
           <root-step>D</root-step>
@@ -741,8 +853,8 @@
         <type>half</type>
       </note>
     </measure>
-    <!--========================= Measure 45 =========================-->
-    <measure number="45">
+    <!--========================= Measure 50 =========================-->
+    <measure number="50">
       <harmony>
         <root>
           <root-step>G</root-step>
@@ -754,8 +866,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 46 =========================-->
-    <measure number="46">
+    <!--========================= Measure 51 =========================-->
+    <measure number="51">
       <harmony>
         <root>
           <root-step>C</root-step>
@@ -767,8 +879,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 47 =========================-->
-    <measure number="47">
+    <!--========================= Measure 52 =========================-->
+    <measure number="52">
       <harmony>
         <root>
           <root-step>F</root-step>
@@ -780,8 +892,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 48 =========================-->
-    <measure number="48">
+    <!--========================= Measure 53 =========================-->
+    <measure number="53">
       <harmony>
         <root>
           <root-step>A</root-step>
@@ -794,8 +906,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 49 =========================-->
-    <measure number="49">
+    <!--========================= Measure 54 =========================-->
+    <measure number="54">
       <harmony>
         <root>
           <root-step>G</root-step>
@@ -808,8 +920,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 50 =========================-->
-    <measure number="50">
+    <!--========================= Measure 55 =========================-->
+    <measure number="55">
       <harmony>
         <root>
           <root-step>C</root-step>
@@ -821,81 +933,14 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 51 =========================-->
-    <measure number="51">
-      <harmony>
-        <root>
-          <root-step>B</root-step>
-          <root-alter>-1</root-alter>
-        </root>
-        <kind>major-seventh</kind>
-      </harmony>
-      <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
-      </note>
-    </measure>
-    <!--========================= Measure 52 =========================-->
-    <measure number="52">
-      <harmony>
-        <root>
-          <root-step>B</root-step>
-          <root-alter>-1</root-alter>
-        </root>
-        <kind>minor-seventh</kind>
-      </harmony>
-      <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
-      </note>
-    </measure>
-    <!--========================= Measure 53 =========================-->
-    <measure number="53">
-      <harmony>
-        <root>
-          <root-step>F</root-step>
-        </root>
-        <kind>major-seventh</kind>
-      </harmony>
-      <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
-      </note>
-    </measure>
-    <!--========================= Measure 54 =========================-->
-    <measure number="54">
-      <harmony>
-        <root>
-          <root-step>F</root-step>
-        </root>
-        <kind>dominant</kind>
-      </harmony>
-      <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
-      </note>
-    </measure>
-    <!--========================= Measure 55 =========================-->
-    <measure number="55">
-      <harmony>
-        <root>
-          <root-step>B</root-step>
-          <root-alter>-1</root-alter>
-        </root>
-        <kind>major-seventh</kind>
-      </harmony>
-      <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
-      </note>
-    </measure>
     <!--========================= Measure 56 =========================-->
     <measure number="56">
       <harmony>
         <root>
-          <root-step>A</root-step>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
         </root>
-        <kind>dominant</kind>
+        <kind>major-seventh</kind>
       </harmony>
       <note>
         <rest measure="yes" />
@@ -906,9 +951,10 @@
     <measure number="57">
       <harmony>
         <root>
-          <root-step>D</root-step>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
         </root>
-        <kind>minor</kind>
+        <kind>minor-seventh</kind>
       </harmony>
       <note>
         <rest measure="yes" />
@@ -932,35 +978,7 @@
     <measure number="59">
       <harmony>
         <root>
-          <root-step>A</root-step>
-          <root-alter>-1</root-alter>
-        </root>
-        <kind>diminished-seventh</kind>
-      </harmony>
-      <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
-      </note>
-    </measure>
-    <!--========================= Measure 60 =========================-->
-    <measure number="60">
-      <harmony>
-        <root>
-          <root-step>G</root-step>
-          <root-alter>0</root-alter>
-        </root>
-        <kind>minor-seventh</kind>
-      </harmony>
-      <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
-      </note>
-    </measure>
-    <!--========================= Measure 61 =========================-->
-    <measure number="61">
-      <harmony>
-        <root>
-          <root-step>C</root-step>
+          <root-step>F</root-step>
         </root>
         <kind>dominant</kind>
       </harmony>
@@ -969,8 +987,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 62 =========================-->
-    <measure number="62">
+    <!--========================= Measure 60 =========================-->
+    <measure number="60">
       <harmony>
         <root>
           <root-step>B</root-step>
@@ -983,14 +1001,39 @@
         <duration>40320</duration>
       </note>
     </measure>
+    <!--========================= Measure 61 =========================-->
+    <measure number="61">
+      <harmony>
+        <root>
+          <root-step>A</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 62 =========================-->
+    <measure number="62">
+      <harmony>
+        <root>
+          <root-step>D</root-step>
+        </root>
+        <kind>minor</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
     <!--========================= Measure 63 =========================-->
     <measure number="63">
       <harmony>
         <root>
-          <root-step>B</root-step>
-          <root-alter>-1</root-alter>
+          <root-step>G</root-step>
         </root>
-        <kind>minor-seventh</kind>
+        <kind>dominant</kind>
       </harmony>
       <note>
         <rest measure="yes" />
@@ -1014,6 +1057,164 @@
     <measure number="65">
       <harmony>
         <root>
+          <root-step>G</root-step>
+        </root>
+        <kind>half-diminished</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+    </measure>
+    <!--========================= Measure 66 =========================-->
+    <measure number="66">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+        </root>
+        <kind>major-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 67 =========================-->
+    <measure number="67">
+      <harmony>
+        <root>
+          <root-step>G</root-step>
+        </root>
+        <kind>minor-seventh</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+    </measure>
+    <!--========================= Measure 68 =========================-->
+    <measure number="68">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+        </root>
+        <kind>major-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 69 =========================-->
+    <measure number="69">
+      <harmony>
+        <root>
+          <root-step>A</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>diminished-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 70 =========================-->
+    <measure number="70">
+      <harmony>
+        <root>
+          <root-step>G</root-step>
+          <root-alter>0</root-alter>
+        </root>
+        <kind>minor-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 71 =========================-->
+    <measure number="71">
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 72 =========================-->
+    <measure number="72">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 73 =========================-->
+    <measure number="73">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>minor-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 74 =========================-->
+    <measure number="74">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+        </root>
+        <kind>major-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 75 =========================-->
+    <measure number="75">
+      <harmony>
+        <root>
           <root-step>F</root-step>
         </root>
         <kind>major-seventh</kind>
@@ -1035,8 +1236,8 @@
         <type>half</type>
       </note>
     </measure>
-    <!--========================= Measure 66 =========================-->
-    <measure number="66">
+    <!--========================= Measure 76 =========================-->
+    <measure number="76">
       <harmony>
         <root>
           <root-step>D</root-step>
@@ -1048,8 +1249,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 67 =========================-->
-    <measure number="67">
+    <!--========================= Measure 77 =========================-->
+    <measure number="77">
       <harmony>
         <root>
           <root-step>B</root-step>
@@ -1073,8 +1274,8 @@
         <type>half</type>
       </note>
     </measure>
-    <!--========================= Measure 68 =========================-->
-    <measure number="68">
+    <!--========================= Measure 78 =========================-->
+    <measure number="78">
       <harmony>
         <root>
           <root-step>A</root-step>
@@ -1086,13 +1287,38 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 69 =========================-->
-    <measure number="69">
+    <!--========================= Measure 79 =========================-->
+    <measure number="79">
       <harmony>
         <root>
           <root-step>A</root-step>
         </root>
         <kind>minor</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+      <harmony>
+        <root>
+          <root-step>G</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest />
+        <duration>20160</duration>
+        <type>half</type>
+      </note>
+    </measure>
+    <!--========================= Measure 80 =========================-->
+    <measure number="80">
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+        </root>
+        <kind>major-seventh</kind>
       </harmony>
       <note>
         <rest />
@@ -1112,8 +1338,8 @@
         <type>half</type>
       </note>
     </measure>
-    <!--========================= Measure 70 =========================-->
-    <measure number="70">
+    <!--========================= Measure 81 =========================-->
+    <measure number="81">
       <harmony>
         <root>
           <root-step>D</root-step>
@@ -1137,34 +1363,8 @@
         <type>half</type>
       </note>
     </measure>
-    <!--========================= Measure 71 =========================-->
-    <measure number="71">
-      <harmony>
-        <root>
-          <root-step>G</root-step>
-        </root>
-        <kind>minor-seventh</kind>
-      </harmony>
-      <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
-      </note>
-    </measure>
-    <!--========================= Measure 72 =========================-->
-    <measure number="72">
-      <harmony>
-        <root>
-          <root-step>C</root-step>
-        </root>
-        <kind>dominant</kind>
-      </harmony>
-      <note>
-        <rest measure="yes" />
-        <duration>40320</duration>
-      </note>
-    </measure>
-    <!--========================= Measure 73 =========================-->
-    <measure number="73">
+    <!--========================= Measure 82 =========================-->
+    <measure number="82">
       <harmony>
         <root>
           <root-step>F</root-step>
@@ -1176,8 +1376,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 74 =========================-->
-    <measure number="74">
+    <!--========================= Measure 83 =========================-->
+    <measure number="83">
       <harmony>
         <root>
           <root-step>A</root-step>
@@ -1190,8 +1390,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 75 =========================-->
-    <measure number="75">
+    <!--========================= Measure 84 =========================-->
+    <measure number="84">
       <harmony>
         <root>
           <root-step>G</root-step>
@@ -1204,8 +1404,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 76 =========================-->
-    <measure number="76">
+    <!--========================= Measure 85 =========================-->
+    <measure number="85">
       <harmony>
         <root>
           <root-step>C</root-step>
@@ -1217,8 +1417,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 77 =========================-->
-    <measure number="77">
+    <!--========================= Measure 86 =========================-->
+    <measure number="86">
       <harmony>
         <root>
           <root-step>B</root-step>
@@ -1231,8 +1431,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 78 =========================-->
-    <measure number="78">
+    <!--========================= Measure 87 =========================-->
+    <measure number="87">
       <harmony>
         <root>
           <root-step>B</root-step>
@@ -1245,8 +1445,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 79 =========================-->
-    <measure number="79">
+    <!--========================= Measure 88 =========================-->
+    <measure number="88">
       <harmony>
         <root>
           <root-step>F</root-step>
@@ -1258,8 +1458,8 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 80 =========================-->
-    <measure number="80">
+    <!--========================= Measure 89 =========================-->
+    <measure number="89">
       <harmony>
         <root>
           <root-step>F</root-step>
@@ -1271,13 +1471,79 @@
         <duration>40320</duration>
       </note>
     </measure>
-    <!--========================= Measure 81 =========================-->
-    <measure number="81">
+    <!--========================= Measure 90 =========================-->
+    <measure number="90">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 91 =========================-->
+    <measure number="91">
       <harmony>
         <root>
           <root-step>A</root-step>
         </root>
         <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 92 =========================-->
+    <measure number="92">
+      <harmony>
+        <root>
+          <root-step>D</root-step>
+        </root>
+        <kind>minor</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 93 =========================-->
+    <measure number="93">
+      <harmony>
+        <root>
+          <root-step>G</root-step>
+        </root>
+        <kind>dominant</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 94 =========================-->
+    <measure number="94">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+        </root>
+        <kind>major-seventh</kind>
+      </harmony>
+      <note>
+        <rest measure="yes" />
+        <duration>40320</duration>
+      </note>
+    </measure>
+    <!--========================= Measure 95 =========================-->
+    <measure number="95">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+        </root>
+        <kind>major-seventh</kind>
       </harmony>
       <note>
         <rest measure="yes" />
