@@ -14,6 +14,32 @@ import csv
 from time import sleep
 from urllib.parse import urlparse, parse_qs
 
+import csv
+from io import StringIO
+
+
+def get_alignment_data(csv_path, beats_per_bar):
+    csv_reader = csv.reader(StringIO(Path(csv_path).read_text()))
+    _ = next(csv_reader)
+
+    max_beat = max(int(row[1]) for row in csv_reader)
+    total_bars = (max_beat // beats_per_bar) + 1
+
+    csv_reader = csv.reader(StringIO(Path(csv_path).read_text()))
+    next(csv_reader)  # skip header
+
+    syncpoints_output = []
+    for row in csv_reader:
+        beat_time, beat_number = float(row[0]), int(row[1])
+
+        bar = beat_number // beats_per_bar
+        beat_in_bar = beat_number % beats_per_bar
+
+        if beat_in_bar == 0:
+            syncpoints_output.append([bar, beat_time])
+
+    return syncpoints_output
+
 
 def get_yt_id(url):
     # Parse the URL
@@ -28,7 +54,7 @@ def get_yt_id(url):
     return video_id
 
 
-def write_music_xml(filename, output_path):
+def write_music_xml(filename, bar_indexes, output_path):
     section_output = dict()
 
     data = json.load(open(filename))
@@ -46,12 +72,14 @@ def write_music_xml(filename, output_path):
     for label in data["form"]:
         form_output.extend(section_output[label])
 
+    piece_output = []
+    for bar_index in bar_indexes:
+        piece_output.append(form_output[bar_index])
+
     s = music21.stream.Stream()
     p = music21.stream.Part()
 
-    for chord, duration in chord_output:
-        root = chord.get_root()
-
+    for chord, duration in piece_output:
         p.append(
             music21.harmony.ChordSymbol(
                 music21.harmony.chordSymbolFigureFromChord(chord)
@@ -66,7 +94,20 @@ def write_music_xml(filename, output_path):
 def main(filename, yt_url, artist, song_title, syncpoints_path):
     input_path = str(Path(filename))
     output_path = str.replace(input_path, ".json", "-chords.xml")
-    write_music_xml(input_path, output_path)
+    syncpoint_output_path = str.replace(input_path, ".json", "-syncpoints.json")
+
+    # get beats per bar
+    beats_per_bar = int(json.load(open(filename))["time"].split(" ")[0])
+
+    alignment_data = get_alignment_data(syncpoints_path, beats_per_bar)
+    bar_indexes = [row[0] for row in alignment_data]
+
+    write_music_xml(input_path, bar_indexes, output_path)
+
+    syncpoints = [
+        [bar_idx, sync_time] for bar_idx, (_, sync_time) in enumerate(alignment_data)
+    ]
+    Path(syncpoint_output_path).write_text(json.dumps(list(syncpoints)))
 
     sys.exit(0)
 
@@ -150,10 +191,10 @@ if __name__ == "__main__":
         syncpoints_path = sys.argv[5]
         print(f"Filename: {filename}")
     else:
-        filename = "test/leadsheet.json"
-        yt_url = ""
-        artist = ""
-        song_title = ""
-        syncpoints_path = "test/syncpoints.json"
+        filename = "test/0002_Embraceable_You/leadsheet.json"
+        yt_url = "https://www.youtube.com/watch?v=xAmuQIKiwms"
+        artist = "Art Tatum"
+        song_title = "Embraceable You"
+        syncpoints_path = "test/0002_Embraceable_You/alignment.csv"
 
     main(filename, yt_url, artist, song_title, syncpoints_path)
